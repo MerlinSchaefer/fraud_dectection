@@ -26,7 +26,6 @@ Fabrizio Carcillo, Yann-Aël Le Borgne, Olivier Caelen, Frederic Oblé, Gianluca
 
 ## To do
 
-- build script with end-to-end final model + functions
 - finish Readme
 - create requirements.txt
 - create Learnings.md
