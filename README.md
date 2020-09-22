@@ -24,8 +24,10 @@ Bertrand Lebichot, Yann-Aël Le Borgne, Liyun He, Frederic Oblé, Gianluca Bonte
 
 Fabrizio Carcillo, Yann-Aël Le Borgne, Olivier Caelen, Frederic Oblé, Gianluca Bontempi Combining Unsupervised and Supervised Learning in Credit Card Fraud Detection Information Sciences, 2019
 
+
+*Note: the requirements text does not specifically list any ipython or jupyter related packages*
+
 ## To do
 
 - finish Readme
-- create requirements.txt
 - create Learnings.md
