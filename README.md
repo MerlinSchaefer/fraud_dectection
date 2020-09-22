@@ -5,8 +5,13 @@
 I am using the Credit Card Fraud Detection dataset as provided on [kaggle](https://www.kaggle.com/mlg-ulb/creditcardfraud).
 
 
-**The Kaggle page asks to cite the following work:**
+With this project I wanted to gain some experience with skewed data and outlier detection.
+I originally planned to build something interactive, yet I realized that the PCA-features wouldn't be a good fit for any user input etc.
+I therefore opted for a more analytic approach with an end-to-end model as the result.
 
+
+
+**The Kaggle page asks to cite the following work:**
 
 Andrea Dal Pozzolo, Olivier Caelen, Reid A. Johnson and Gianluca Bontempi. Calibrating Probability with Undersampling for Unbalanced Classification. In Symposium on Computational Intelligence and Data Mining (CIDM), IEEE, 2015
 
@@ -27,7 +32,3 @@ Fabrizio Carcillo, Yann-Aël Le Borgne, Olivier Caelen, Frederic Oblé, Gianluca
 
 *Note: the requirements text does not specifically list any ipython or jupyter related packages*
 
-## To do
-
-- finish Readme
-- create Learnings.md

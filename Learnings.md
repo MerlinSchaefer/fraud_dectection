@@ -9,6 +9,8 @@ After starting to implement my own solutions for cross validating the data, I re
 
 I also realized how quickly GridSearchCV and even RandomSearchCV can require large amounts of computing power. This taught me to be more careful when selecting the Hyperparameters to tune.
 
+I learned that anomaly detection might not always be the best choice, even for highly skewed data with a very small number of instances in the target class.
+
 Overall I learned new things but also used and practiced many existing skills.
 
 Unfortunately I couldn't build a Streamlit app or something interactive as the data was already the product of PCA and the features can't really be given through user input.
