@@ -11,7 +11,6 @@ import matplotlib.pyplot as plt
 # sklearn imports
 from sklearn.model_selection import StratifiedShuffleSplit
 from sklearn.metrics import accuracy_score,confusion_matrix, precision_score, recall_score, precision_recall_curve
-from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
 
 #Functions
@@ -88,19 +87,16 @@ for train_index, test_index in strat_split.split(X,y):
     X_train, X_test = X.loc[train_index], X.loc[test_index]
     y_train, y_test = y.loc[train_index], y.loc[test_index]
     
-#Scale the data
-scaler = StandardScaler()
-X_train_scaled = scaler.fit_transform(X_train)
-X_test_scaled = scaler.transform(X_test)
+
 
 #define the model
 forest_clf = RandomForestClassifier(bootstrap=False, max_depth=82, min_samples_split=10,
                        n_estimators=233, n_jobs=-1, random_state=13)
 
 #fitting the model
-forest_clf.fit(X_train_scaled,y_train)
+forest_clf.fit(X_train,y_train)
 #getting predictions for the test set
-y_pred_forest = forest_clf.predict(X_test_scaled)
+y_pred_forest = forest_clf.predict(X_test)
 #evaluating the performance on the test set
 evaluate_classification(y_test, y_pred_forest)
 
